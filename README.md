@@ -1,2 +1,2 @@
 # Command-Selector-for-MacOS
-It simplifies PC operation with commands on the terminal.
+It simplifies PC operation with commands on the terminal without your mouse.
