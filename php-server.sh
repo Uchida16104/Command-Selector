@@ -12,5 +12,4 @@ while [ -h "$SOURCE" ] ; do SOURCE="$(readlink "$SOURCE")"; done
 DIR="$( cd -P "$( dirname "$SOURCE" )/" && pwd )"
 cd "$DIR"
 
-
 php -S localhost:8888
