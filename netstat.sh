@@ -14,8 +14,6 @@ while [ -h "$SOURCE" ] ; do SOURCE="$(readlink "$SOURCE")"; done
 DIR="$( cd -P "$( dirname "$SOURCE" )/" && pwd )"
 cd "$DIR"
 
-# Run your command...
-
 #!/bin/bash
 
 while :
