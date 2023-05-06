@@ -12,7 +12,6 @@ while [ -h "$SOURCE" ] ; do SOURCE="$(readlink "$SOURCE")"; done
 DIR="$( cd -P "$( dirname "$SOURCE" )/" && pwd )"
 cd "$DIR"
 
-
 python -m http.server 8000
 
 echo "open localhost:8000"
