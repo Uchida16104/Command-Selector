@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 set -e
 
-# Open new terminal.
 SOURCE="${BASH_SOURCE[0]}"
 DIR=$(pwd)
 if [[ "$(uname)" = "Darwin" ]] && [[ -z "$ON_NEW_TERMINAL" ]] && [[ -z "$NO_NEW_TERMINAL" ]] ; then
@@ -14,7 +13,6 @@ while [ -h "$SOURCE" ] ; do SOURCE="$(readlink "$SOURCE")"; done
 DIR="$( cd -P "$( dirname "$SOURCE" )/" && pwd )"
 cd "$DIR"
 
-# Run your command...
 
 node server.js
 
