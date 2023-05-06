@@ -1,9 +1,11 @@
 #!/bin/bash
-echo -n ' Select to type mac actions. ( login / android / browser / search / screen / closer / programming / calculator / logout / poweroff / exit / help ) '
+echo -n ' Select to type mac actions. ( login / server / android / browser / search / screen / closer / programming / calculator / logout / poweroff / exit / help ) '
 read act
 
 if [ "$act" = "login" ]; then
   bash login.sh
+elif [ "$act" = "server" ]; then
+  bash server.sh
 elif [ "$act" = "android" ]; then
   bash android.sh
 elif [ "$act" = "browser" ]; then
